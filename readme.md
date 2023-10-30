@@ -83,4 +83,4 @@ fn main() -> glib::ExitCode {
 }
 ```
 cargo run
-![](hello-world.jpg)
+![](my-gtk-app/hello-world.jpg)
