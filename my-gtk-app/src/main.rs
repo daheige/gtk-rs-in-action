@@ -13,7 +13,7 @@ fn build_ui(app: &Application) {
         .margin_end(12)
         .build();
     // connect to clicked signal of button
-    button.connect_clicked(|button| {
+    button.connect_clicked(move |button| {
         button.set_label("hello,world!");
     });
 
@@ -22,8 +22,8 @@ fn build_ui(app: &Application) {
         .application(app)
         .child(&button)
         .title("my gtk app")
-        .default_width(100)
-        .default_height(100)
+        // .default_width(100)
+        // .default_height(100)
         .build();
 
     // present window
