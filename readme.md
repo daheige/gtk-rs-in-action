@@ -1,7 +1,9 @@
 # gtk-rs
 GTK 4 is the newest version of a popular cross-platform widget toolkit written in C. Thanks to GObject-Introspection, GTK's API can be easily targeted by various programming languages.  The API even describes the ownership of its parameters!
 
-# 开发参考文档
+# docs
+- https://github.com/gtk-rs/gtk4-rs
+- https://crates.io/crates/gtk4
 - https://gtk-rs.org/gtk4-rs/stable/latest/book/installation.html
 - https://www.cnblogs.com/nsfoxer/p/16530314.html
 
