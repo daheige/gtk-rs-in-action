@@ -1,0 +1,10 @@
+[package]
+name = "dialog-app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# 引入gtk-rs对应的版本，并设置包别名，当然使用的gtk最低版本4.10
+gtk = { version = "0.7.3", package = "gtk4", features = ["v4_10"] }
