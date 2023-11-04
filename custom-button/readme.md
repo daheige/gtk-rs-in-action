@@ -1,5 +1,8 @@
-# 子类#
+# GObject子类
 GObject非常依赖继承。我们可以通过继承Button实现自定义按钮。
+
+# 参考文档
+https://gtk-rs.org/gtk4-rs/stable/latest/book/g_object_subclassing.html
 
 # 实现思路
 1. 实现ObjectSubClass
@@ -8,6 +11,7 @@ GObject非常依赖继承。我们可以通过继承Button实现自定义按钮�
     - ParentType: 父类型
 2. 实现 ObjectSubclass trait new方法
 
+实现核心代码：
 custom_button/imp.rs
 ```rust
 use glib::Object;
