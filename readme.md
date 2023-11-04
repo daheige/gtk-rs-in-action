@@ -89,3 +89,6 @@ fn main() -> glib::ExitCode {
 ```
 cargo run
 ![](my-gtk-app/hello-world.jpg)
+
+# other examples
+https://github.com/gtk-rs/gtk4-rs/tree/master/examples
