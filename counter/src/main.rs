@@ -37,6 +37,8 @@ fn build_ui(app: &Application) {
     // but instead provide a way to retrieve a strong reference if the value is still alive.
     // Since we want our apps to free unneeded memory, we should use weak references
     // for the buttons instead.
+    // 组件都继承GObject计数引用类，所以直接使用clone!()即可
+    // 这里如果使用强引用，会导致循环依赖问题。所有全部使用弱引用。
     // 弱引用
     button_increase.connect_clicked(clone!(@weak number, @strong button_decrease =>
         move |_| {
